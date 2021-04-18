@@ -935,7 +935,7 @@ Tutorial.prototype.$initializeExerciseEditors = function() {
       add_submit_button("fa-check-square-o", "btn-primary", "Submit Answer", true);
 
     // create run button
-    var run_button = add_submit_button("fa-play", "btn-success", "Run Code", false);
+ //   var run_button = add_submit_button("fa-play", "btn-success", "Run Code", false);
 
     // create code div and add it to the input div
     var code_div = $('<div class="tutorial-exercise-code-editor"></div>');
@@ -981,7 +981,7 @@ Tutorial.prototype.$initializeExerciseEditors = function() {
       diagnostics: diagnostics,
       startover_code: startover_code
     };
-
+/*
     // bind execution keys
     function bindExecutionKey(name, key) {
       var macKey = key.replace("Ctrl+", "Command+");
@@ -1000,7 +1000,7 @@ Tutorial.prototype.$initializeExerciseEditors = function() {
     run_button.on('click', function() {
       editor.focus();
     });
-
+*/
     // mange ace height as the document changes
     var updateAceHeight = function()  {
       var lines = exercise.attr('data-lines');
